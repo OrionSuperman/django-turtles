@@ -1,0 +1,17 @@
+<html>
+<head>
+	<title></title>
+	{% load staticfiles %}
+	<link rel="stylesheet" href="{% static 'quiz/style.css' %}">
+
+</head>
+<body>
+
+	<h1>TURTLE POWER</h1>
+
+	{% for turtle in turtles %}
+		<img src='{{turtle.monkey}}' alt='{{turtle.color}}'>
+	{% endfor %}
+
+</body>
+</html>
